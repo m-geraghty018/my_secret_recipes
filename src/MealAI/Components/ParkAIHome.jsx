@@ -21,11 +21,7 @@ const ParkAIHome = () => {
     const [cuisine, setCuisine] = useState('');
     const [otherOptions, setOtherOptions] = useState('');
 
-    useEffect(() => {
-        fetchRecipe();
-    }, []);
-
-    const fetchRecipe = async () => {
+    const fetchRecipe = useCallback(async () => {
         setIsLoading(true);
         try {
             const response = await fetchChatGPTResponse(protein, otherOptions, cuisine);
@@ -38,7 +34,11 @@ const ParkAIHome = () => {
         } finally {
             setIsLoading(false);
         }
-    };
+    }, [protein, otherOptions, cuisine]);
+    
+    useEffect(() => {
+        fetchRecipe();
+    }, [fetchRecipe]);
 
     const handleSave = async () => {
         try {
