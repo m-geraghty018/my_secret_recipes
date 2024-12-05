@@ -49,7 +49,7 @@ const MealPlanHome = () => {
 
         try {
             console.log("ID to delete: ", id);
-            const response = await fetch(`http://localhost:5000/deleteRecipe/${id}`, {
+            const response = await fetch(`https://my-secret-recipes-db.onrender.com/deleteRecipe/${id}`, {
                 method: 'DELETE',
             });
 

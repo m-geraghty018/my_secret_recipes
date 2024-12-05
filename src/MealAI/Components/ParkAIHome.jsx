@@ -46,7 +46,7 @@ const ParkAIHome = () => {
             const imageUrl = recipeImage.endsWith('.jpg') ? recipeImage : defaultImage;
             console.log("Image URL: ", imageUrl)
     
-            const response = await fetch('http://localhost:5000/addRecipe', {
+            const response = await fetch('https://my-secret-recipes-db.onrender.com/addRecipe', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({

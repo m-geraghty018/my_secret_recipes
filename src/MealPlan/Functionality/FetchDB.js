@@ -10,7 +10,7 @@ import axios from 'axios';
 export const fetchDBResponse = async () => {
     try {
         // Fetch all recipes from the backend API
-        const response = await axios.get('http://localhost:5000/recipes'); // Replace with your API endpoint
+        const response = await axios.get('https://my-secret-recipes-db.onrender.com/recipes'); // Replace with your API endpoint
 
         // Check if the response contains data
         if (!response.data) {
@@ -44,7 +44,7 @@ export const addRecipeToDB = async (recipe) => {
         }
 
         // Send the recipe data to the backend API
-        const response = await axios.post('http://localhost:5000/addRecipe', recipe); // Replace with your API endpoint
+        const response = await axios.post('https://my-secret-recipes-db.onrender.com/addRecipe', recipe); // Replace with your API endpoint
 
         return response.data; // Assuming the API returns the added recipe or a success message
     } catch (error) {
