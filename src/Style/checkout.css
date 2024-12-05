@@ -1,0 +1,257 @@
+/* Main checkout styling with background image */
+.checkout {
+    background-image: url('checkout.jpg'); /* Replace with your actual image URL or path */
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating the image */
+    background-attachment: fixed; /* Makes the background fixed during scrolling */
+    color: #333;
+    font-family: 'Inter', sans-serif;
+    padding: 2rem 1rem; /* Reduced padding on the sides */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Ensures full page height */
+    box-sizing: border-box;
+}
+.saveAsPDF {
+    background-color: #ff7043;
+    color: #ffffff;
+    font-size: 1.25rem;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 50px; /* Rounded buttons */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    min-width: 250px; /* Consistent button width */
+    text-transform: uppercase; /* Emphasize text */
+    font-weight: bold;
+}
+.saveAsPDF:hover {
+    background-color: #d84315; /* Darker orange on hover */
+    cursor: pointer;
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Container styling for centering */
+.form-group {
+    display: flex;
+    flex-direction: column; /* Stack label, dropdown, and button vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically if necessary */
+    margin: 1rem 0; /* Add vertical spacing */
+    background: rgba(255, 255, 255, 0.908);
+    padding: 15px 15px 15px 15px;
+    border-radius: 10px;
+    font-family: 'Otomanopee One';
+}
+
+/* Styling for the label text */
+.form-group label {
+    font-size: 18px; /* Slightly larger font size */
+    font-weight: bold; /* Make the text bold */
+    color: #10bad4; /* Green color to match the button */
+    margin-bottom: 0.5rem; /* Space below the label */
+    text-align: center; /* Center the text */
+    letter-spacing: 0.5px; /* Add slight spacing between letters for readability */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.form-group label:hover {
+    color:#1c6db9; /* Slightly darker green on hover */
+}
+
+/* Dropdown styling */
+#num-people-select {
+    width: 200px; /* Set width for the dropdown */
+    padding: 10px; /* Add padding for spacing */
+    font-size: 16px; /* Font size for better readability */
+    border: 1px solid #ccc; /* Light border for separation */
+    border-radius: 5px; /* Rounded corners for a clean look */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #f9f9f9; /* Light background color */
+    color: #333; /* Text color */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    margin-bottom: 1rem; /* Spacing below the dropdown */
+    text-align: center; /* Center the text inside the dropdown */
+}
+
+#num-people-select:focus {
+    outline: none; /* Remove default outline */
+    border-color: #1c6db9; /* Highlight border on focus */
+    box-shadow: #1c6db9; /* Green glow effect */
+}
+
+/* Button styling */
+#get-list-button {
+    padding: 10px 20px; /* Padding for a balanced button size */
+    font-size: 16px; /* Font size for clarity */
+    background-color: #10bad4; /* Green background */
+    color: white; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover transitions */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+#get-list-button:hover {
+    background-color: #1c6db9; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+#get-list-button:active {
+    background-color: #1c6db9; /* Even darker green on click */
+    transform: scale(0.98); /* Slightly shrink on click */
+}
+
+
+
+/* Title styling for checkout */
+/* Title styling for checkout */
+.checkout #checkout-title {
+    font-size: 2.5rem; /* Bold and prominent size */
+    color: #e65b00; /* Set color to black */
+    text-transform: uppercase; /* Strong, attention-grabbing text */
+    text-align: center; /* Center-align the title */
+    font-family: 'Otomanopee One'; /* Modern and clean sans-serif font */
+    font-weight: 900; /* Extra bold text */
+    background: none; /* Remove gradient background */
+    letter-spacing: 2px; /* Add spacing between letters */
+    margin: 1.5rem auto 1rem; /* Reduced margin for less space above and below */
+}
+
+/* Shadow effect for title text */
+.checkout #checkout-title:hover {
+    text-shadow: 0 4px 15px rgba(255, 255, 255, 0.8); /* White glow effect on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    transition: transform 0.3s ease, text-shadow 0.3s ease; /* Smooth hover transition */
+}
+
+/* Shopping list container styling with background effect */
+.shopping-list {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.836), rgba(245, 245, 245, 0.8)), url('checkout2.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 1.5rem 2rem; /* Added more horizontal padding */
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1500px;
+    margin: 1.5rem auto; /* Center the shopping list container */
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    white-space: pre-wrap; /* Preserve whitespace but wrap lines */
+    overflow-wrap: break-word; /* Ensure long words break */
+    box-sizing: border-box;
+
+    /* Flexbox for centering child elements */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+    gap: 1.5rem; /* Space between the shopping list and button */
+}
+
+
+/* Add subtle hover effect for shopping list */
+.shopping-list:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+}
+
+
+/* Title styling for shopping list section */
+.shopping-list h2 {
+    color: #4caf50;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.5rem;
+}
+
+/* Category heading styling (e.g., Produce, Dairy) */
+.shopping-list h3 {
+    color: #388e3c;
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 0.3rem;
+}
+
+/* Individual item styling */
+.shopping-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0.5rem 0 0 1.2rem;
+}
+
+.shopping-list li {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.shopping-list li::before {
+    content: "•";
+    color: #4caf50;
+    margin-right: 0.6rem;
+    font-size: 1.2rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .checkout {
+        padding: 1.5rem 1rem;
+    }
+
+    .shopping-list {
+        padding: 1rem;
+        width: 95%; /* Full width for smaller screens */
+        max-width: 95%;
+        margin-bottom: 1.5rem; /* Extra margin at the bottom */
+    }
+
+    .shopping-list h2 {
+        font-size: 1.35rem;
+    }
+
+    .shopping-list h3 {
+        font-size: 1.15rem;
+    }
+
+    .shopping-list li {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .checkout {
+        padding: 1rem;
+    }
+
+    .shopping-list {
+        padding: 0.75rem;
+        width: 100%; /* Full width for small screens */
+        max-width: 100%;
+        margin-bottom: 1rem; /* Extra margin at the bottom */
+    }
+
+    .shopping-list h2 {
+        font-size: 1.2rem;
+    }
+
+    .shopping-list h3 {
+        font-size: 1rem;
+    }
+
+    .shopping-list li {
+        font-size: 0.9rem;
+    }
+}

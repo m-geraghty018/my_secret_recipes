@@ -1,0 +1,23 @@
+.footer {
+    border-top: 1px solid #3a4937; /* Adds a top border */
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    width: 100%;
+    position: static; /* Removes the fixed positioning */
+}
+
+.footer img {
+    width: 20px;
+    height: 20px;
+    margin: 0px 5px;
+}
+
+/* Remove additional padding for non-fixed footer */
+body {
+    padding-bottom: 0; /* No longer needed for static footer */
+}
